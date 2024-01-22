@@ -2,7 +2,7 @@
 
 Welcome to the blackBox!
 
-The blackBox contains a set of competitive programming templates that I've written for use in contests (USACO, Codeforces, Leetcode, etc)
+The blackBox contains a set of competitive programming templates that I've written for use in contests (Codeforces, Leetcode, etc)
 
 Here's a list of the data structures/algorithms I've implemented so far:
 

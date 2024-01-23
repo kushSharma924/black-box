@@ -1,8 +1,8 @@
-# blackBox
+# black-box
 
-Welcome to the blackBox!
+Welcome to the black-box!
 
-The blackBox contains a set of competitive programming templates that I've written for use in contests (Codeforces, Leetcode, etc)
+The black-box contains a set of competitive programming templates that I've written for use in contests (Codeforces, Leetcode, etc)
 
 Here's a list of the data structures/algorithms I've implemented so far:
 

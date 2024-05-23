@@ -2,9 +2,9 @@
 
 Welcome to the black-box!
 
-The black-box contains a set of competitive programming templates that I've written for use in contests (Codeforces, Leetcode, etc)
+The black-box contains a set of competitive programming data structures & algorithm templates that I've written for reference and as practice for contests such as Codeforces and Leetcode. 
 
-Here's a list of the data structures/algorithms I've implemented so far:
+Here's a list of the data structures / algorithms I've implemented so far:
 
 # 1. KMP (Knuth-Morris-Pratt) Algorithm
 - Let S be a string of size N and s be a string of size M (M <= N).

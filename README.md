@@ -19,5 +19,5 @@ Here's a list of the data structures / algorithms I've implemented so far (descr
 # 3. Binary Exponentiation
 - Let a and b be two non-negative integers.
 - Binary exponentation returns a ^ b mod 1000000007.
-- The time complexity for binary exponentation is **O(log(N))** where N is TMax for integers (this comes out to 31 for int32s).
+- The time complexity for binary exponentation is **O(log(N))** where N is TMax for integers (this comes out to 31 for 32 bit ints).
 - The space complexity for binary exponentiation is **O(log(N))** since we maintain an array of size log(N).

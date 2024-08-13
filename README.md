@@ -2,9 +2,9 @@
 
 Welcome to the black-box!
 
-The black-box contains a set of competitive programming data structures & algorithm templates that I've written for reference and as practice for contests such as Codeforces and Leetcode. 
+The black-box contains a set of competitive programming data structures & algorithm templates that I've written for personal reference and as practice for contests on platforms such as Codeforces and Leetcode. 
 
-Here's a list of the data structures / algorithms I've implemented so far:
+Here's a list of the data structures / algorithms I've implemented so far (descriptions are intentionally vague):
 
 # 1. KMP (Knuth-Morris-Pratt) Algorithm
 - Let S be a string of size N and s be a string of size M (M <= N).
@@ -16,3 +16,8 @@ Here's a list of the data structures / algorithms I've implemented so far:
 - BFS will find the length of the shortest path from S to E and return it.
 - The time complexity for BFS is **O(M * N)** since each node is visited at most one time.
 - The space complexity for BFS is **O(M * N)** since we maintain a visited matrix of dimensions M x N.
+# 3. Binary Exponentiation
+- Let a and b be two non-negative integers.
+- Binary exponentation returns a ^ b mod 1000000007.
+- The time complexity for binary exponentation is **O(log(N))** where N is TMax for integers (this comes out to 31 for int32s).
+- The space complexity for binary exponentiation is **O(log(N))** since we maintain an array of size log(N).

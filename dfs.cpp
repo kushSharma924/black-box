@@ -6,12 +6,12 @@ using namespace std;
  */
 
 int main() {
-	vector<vector<int>> graph = {
-		{1, 2, 3},
-		{0, 4, 5},
-		{0, 6, 7},
-		{0, 8, 9},
-		{1}, 
+	vector<vector<int>> graph = {       //           0 
+		{1, 2, 3},                  //        /  |   \
+		{0, 4, 5},                  //       /   |    \
+		{0, 6, 7},                  //      1    2     3
+		{0, 8, 9},                  //    / |   / \    | \ 
+		{1},                        //   4  5  6   7   8  9
 		{1}, 
 		{2}, 
 		{2}, 
@@ -36,5 +36,5 @@ int main() {
 
 	//usage
 	int S = 0;
-	dfs(S, dfs);
+	dfs(S, dfs); // 0 1 4 5 2 6 7 3 8 9
 }

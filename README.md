@@ -26,3 +26,8 @@ Here's a list of the data structures / algorithms I've implemented so far (descr
 - DFS will traverse G starting from S by going as deep into the graph as possible and then backtracking.
 - The time complexity for DFS is **O(V + E)** since each node is visited at most once and each edge is traversed at most once.
 - The space complexity for DFS is **O(V)** since we maintain a visited array of size V.
+# 5. Knapsack DP
+- Problem: Given N items, where each item has a weight and a value, what is the maximum value that can be obtained without exceeding a weight threshold W.
+- Solution: Consider solving the problem using only the first i items (0 <= i <= N), with a max weight of w (0 <= w <= W). We find the following DP recurrence: dp[i][w] = min(dp[i - 1][w], weight[i - 1] + dp[i - 1][w - weight[i - 1]]).
+- The time complexity for this solution is **O(N^2)** since we loop over all possible i and w.
+- The space compplexity for this solution is **O(N^2)** since we maintain a 2d array with our previous results.

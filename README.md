@@ -21,3 +21,8 @@ Here's a list of the data structures / algorithms I've implemented so far (descr
 - Binary exponentation returns a ^ b mod 1000000007.
 - The time complexity for binary exponentation is **O(log(N))** where N is TMax for integers (this comes out to 31 for 32 bit ints).
 - The space complexity for binary exponentiation is **O(log(N))** since we maintain an array of size log(N).
+# 4. DFS (Depth-First-Search)
+- Let G = (V, E) be a graph with V vertices and E edges, and let S be a node in G.
+- DFS will traverse G starting from S by going as deep into the graph as possible and then backtracking.
+- The time complexity for DFS is **O(V + E)** since each node is visited at most once and each edge is traversed at most once.
+- The space complexity for DFS is **O(V)** since we maintain a visited array of size V.

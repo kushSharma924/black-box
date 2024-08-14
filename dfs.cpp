@@ -30,6 +30,7 @@ int main() {
 				dfs(i, dfs);
 			}
 		}
+		visited[node] = false;
 	};
 
 	// end copy

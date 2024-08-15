@@ -34,5 +34,5 @@ Here's a list of the data structures / algorithms I've implemented so far (descr
 # 6. Dijkstra's Algorithm
 - Let G = (V, E) be a graph with V vertices and E non-negative weighted edges, and let S be a node in G.
 - Dijkstra's algorithm will find the shortest path from S to all nodes within G.
-- The time complexity of Dijkstra's is **O(V + E)** since each vertex is visited once and each edge is traversed once.
-- The space complexity of Dijkstra's is **O(V)** since we maintain an array to store the shortest distance to all vertices.
+- The time complexity of Dijkstras is **O(V + E)** since each vertex is visited once and each edge is traversed once.
+- The space complexity of Dijkstras is **O(V)** since we maintain an array to store the shortest distance to all vertices.

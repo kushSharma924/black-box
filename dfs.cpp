@@ -26,10 +26,10 @@ int main() {
 		{3}, 
 		{3}
 	};
-	vector<bool> visited(graph.size(), false);
 
 	// copy
-
+	
+	vector<bool> visited(graph.size(), false);
 	auto dfs = [&](int node, auto&& dfs) -> void {
 		visited[node] = true;
 		cout << node << " ";

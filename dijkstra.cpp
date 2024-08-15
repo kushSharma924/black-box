@@ -30,7 +30,7 @@ signed main() {
 
 	// copy
 
-	auto dijkstra = [&](int& s) -> vi {
+	auto dijkstra = [&](int s) -> vi {
 		vi shortest(v, INF); shortest[0] = 0;
 		priority_queue<pii, vector<pii>, greater<pii>> pq;
 		pq.push({0, s});

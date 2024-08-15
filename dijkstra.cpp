@@ -31,11 +31,12 @@ signed main() {
 	// copy
 
 	auto dijkstra = [&](int s) -> vi {
-		vi shortest(v, INF);
+		vi shortest(v, INF); shortest[0] = 0;
 		priority_queue<pii, vector<pii>, greater<pii>> pq;
 		pq.push({0, s});
 		while (!pq.empty()) {
 			pii cur = pq.top(); pq.pop();
+			if (cur.F > shortest[cur.S]) continue;
 			shortest[cur.S] = cur.F;
 			for (pii& next : graph[cur.S]) {
 				if (shortest[cur.S] + next.F < shortest[next.S]) {

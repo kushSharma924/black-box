@@ -31,7 +31,7 @@ Here's a list of the data structures / algorithms I've implemented so far (descr
 - Solution: Consider solving the problem using only the first i items (0 <= i <= N), with a max weight of w (0 <= w <= W). We find the following DP recurrence: dp[i][w] = min(dp[i - 1][w], weight[i - 1] + dp[i - 1][w - weight[i - 1]]).
 - The time complexity for this solution is **O(N^2)** since we loop over all possible i and w.
 - The space compplexity for this solution is **O(N^2)** since we maintain a 2d array with our previous results.
-# 6. Dijkstra
+# 6. Dijkstra's Algorithm
 - Let G = (V, E) be a graph with V vertices and E non-negative weighted edges, and let S be a node in G.
 - Dijkstra's algorithm will find the shortest path from S to all nodes within G.
 - The time complexity of Dijkstra's is **O(V + E)** since each vertex is visited once and each edge is traversed once.

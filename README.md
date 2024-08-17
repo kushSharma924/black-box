@@ -11,9 +11,9 @@ Here's a list of the data structures / algorithms I've implemented so far (descr
 - KMP will find all occurences of s in S and store them in a vector v.
 - The time complexity for KMP is **O(N+M)**.
 - The space complexity for KMP is **O(M)**.
-# 2. BFS (Breadth-First-Search)
+# 2. Grid BFS (Breadth-First-Search)
 - Let grid be an M x N matrix containing .'s (walkable spaces), #'s (walls), an S (the starting location), and an E (the ending location).
-- BFS will find the length of the shortest path from S to E and return it.
+- Grid BFS will find the length of the shortest path from S to E and return it.
 - The time complexity for BFS is **O(M * N)** since each node is visited at most one time.
 - The space complexity for BFS is **O(M * N)** since we maintain a visited matrix of dimensions M x N.
 # 3. Binary Exponentiation

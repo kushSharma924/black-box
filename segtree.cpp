@@ -37,10 +37,10 @@ signed main() {
 
 	auto update = [&](int cur_node, int cur_left, int cur_right, int index, int val, auto&& update) -> void {
 		if (cur_left == cur_right) tree[cur_node] = val;
-    	else {
-    		int mid = (cur_left + cur_right) / 2;
-    		if (index <= mid) update(2 * cur_node, cur_left, mid, index, val, update);
-	    	else update(2 * cur_node + 1, mid + 1, cur_right, index, val, update);
+    		else {
+    			int mid = (cur_left + cur_right) / 2;
+    			if (index <= mid) update(2 * cur_node, cur_left, mid, index, val, update);
+	    		else update(2 * cur_node + 1, mid + 1, cur_right, index, val, update);
 			tree[cur_node] = tree[cur_node * 2] + tree[cur_node * 2 + 1]; // OPP
 		}
 	};

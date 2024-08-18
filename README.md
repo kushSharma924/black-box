@@ -36,12 +36,12 @@ Here's a list of the data structures / algorithms I've implemented so far (descr
 - Dijkstra's algorithm will find the shortest path from S to all nodes within G.
 - The time complexity of Dijkstras is **O(V + E)** since each vertex is visited once and each edge is traversed once.
 - The space complexity of Dijkstras is **O(V)** since we maintain an array to store the shortest distance to all vertices.
-# Multisource BFS
+# 7. Multisource BFS
 - Let G = (V, E) be a graph with V vertices and E edges and let S be a set of nodes in G, possibly of size 1.
 - Multisource BFS finds, for each node in G, it's shortest path to any node in S.
 - The time complexity of multisource bfs is **O(V + E)** since each vertex is visited once and each edge is traversed once.
 - The space complexity of multisource bfs is **O(V)** since we maintain an array to store the shortest distance to all vertices.
-# Segment Tree
+# 8. Segment Tree
 - Let A be an integer array of size N.
 - Segment tree allows us to compute range sum/min/max/xor/gcd queries on A.
 - The time complexity of each query is **O(logN)** since we answer each query recursively, and each state can generate a max of 2 additional recursive calls.

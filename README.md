@@ -45,4 +45,9 @@ Here's a list of the data structures / algorithms I've implemented so far (descr
 - Let A be an integer array of size N.
 - Segment tree allows us to compute range sum/min/max/xor/gcd queries on A.
 - The time complexity of each query is **O(logN)** since we answer each query recursively, and each state can generate a max of 2 additional recursive calls.
-- The space complexity of the data structure is **O(N)** since we implement it using a binary heap. 
+- The space complexity of the data structure is **O(N)** since we implement it using a binary heap.
+  # 9. Z Algorithm
+- Let S be a string of size N and s be a string of size M (M <= N).
+- The Z Algorithm will find all occurences of s in S by returning a Z array.
+- The time complexity for the Z algorithm is **O(N+M)** since we loop through all 0 <= i <= N + M.
+- The space complexity for the Z algorithm is **O(N + M)** since we maintain a Z array of size N + M.

@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-/* Given a graph G = (V, E) with V vertices and E edges, and a starting vertex S, find the shortest path
-   from S to all vertices.
+/* Given a graph G = (V, E) with V vertices and E edges, and a vector of starting vertices source, find the shortest path
+   from any vertex in source to all vertices.
  */
 
 #define int long long
@@ -17,7 +17,7 @@ const int INF = (int)1e18 + 7;
 signed main() {
 	int v = 6; // 6 vertices, numbered from 0 to v - 1
 	int e = 7; // 7 edges
-	vi s = {0, 1}; // starting vertices
+	vi source = {0, 1}; // starting vertices
 
 	// in p.F moves, we can reach p.S
 	vector<vpii> graph(v, vector<pii>());
@@ -30,11 +30,13 @@ signed main() {
 
 	// copy
 
-	auto dijkstra = [&](vi &s) -> vi {
+	auto dijkstra = [&](vi& source) -> vi {
 		vi shortest(v, INF);
-		for (int &i : s) shortest[i] = 0;
 		priority_queue<pii, vector<pii>, greater<pii>> pq;
-		for (int &i : s) pq.push({0, i});
+		for (int &i : source) {
+			shortest[i] = 0;
+			pq.push({0, i});
+		}
 		while (!pq.empty()) {
 			pii cur = pq.top(); pq.pop();
 			if (cur.F > shortest[cur.S]) continue;
@@ -51,7 +53,7 @@ signed main() {
 
 	// end copy
 
-	vi shortest = dijkstra(s);
+	vi shortest = dijkstra(source);
 	for (int i : shortest) {
 		cout << i << " ";
 	}

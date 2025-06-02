@@ -19,7 +19,7 @@ signed main() {
 	//   4  5  6   7  8  9
 	
 	vector<vector<int>> graph = {
-		{},
+		{1, 2, 3},
 		{4, 5},
 		{6, 7},
 		{8, 9},
@@ -65,6 +65,11 @@ signed main() {
 	// end copy
 
 	vector<int> ans = topo_sort(source);
+
+	if (ans.size() != graph.size()) {
+		cout << "cycle detected in DAG\n";
+	}
+
 	for (int i : ans) {
 		cout << i << " ";
 	}
